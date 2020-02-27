@@ -16,7 +16,7 @@
 12-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:6:18-37
 13
 14    <application
-14-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:8:5-22:19
+14-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:8:5-23:19
 15        android:allowBackup="true"
 15-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -32,20 +32,23 @@
 21-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:13:9-35
 22        android:theme="@style/AppTheme" >
 22-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:14:9-40
-23        <activity android:name="com.example.shifumi.MainActivity" >
-23-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:15:9-21:20
-23-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:15:19-47
-24            <intent-filter>
-24-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:16:13-20:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:17:17-69
-25-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:17:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:19:17-77
-27-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:19:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+23        <activity android:name="com.example.shifumi.acceuil" />
+23-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:15:9-54
+23-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:15:19-42
+24        <activity android:name="com.example.shifumi.MainActivity" >
+24-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:16:9-22:20
+24-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:16:19-47
+25            <intent-filter>
+25-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:18:17-69
+26-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:18:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:20:17-77
+28-->C:\Users\benamier1u\Desktop\Shifumi1\app\src\main\AndroidManifest.xml:20:27-74
+29            </intent-filter>
+30        </activity>
+31    </application>
+32
+33</manifest>
