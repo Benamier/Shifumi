@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-
     <ImageButton
         android:id="@+id/rockButton"
         android:layout_width="136dp"
@@ -54,6 +51,28 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5"/>
 
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Quitter"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/quitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Shifumi</string>
+    <string name="valider">Validate</string>
+    <string name="quitter">Quit</string>
 </resources>
