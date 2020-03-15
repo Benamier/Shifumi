@@ -1,6 +1,8 @@
 package com.example.model;
 
-public class Player {
+import java.io.Serializable;
+
+public class Player implements Serializable {
 
     private int id;
     private String name;
@@ -29,6 +31,10 @@ public class Player {
 
     public boolean isActive() {
         return isActive;
+    }
+
+    public void incrementScore() {
+        score++;
     }
 
     @Override

@@ -7,39 +7,53 @@
     tools:context=".MainActivity">
 
 
+    <!--<android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>-->
 
 
     <ImageButton
         android:id="@+id/rockButton"
-        android:layout_width="136dp"
-        android:layout_height="131dp"
+        android:layout_width="112dp"
+        android:layout_height="113dp"
 
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/pierre"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/paperButton"
+        app:layout_constraintBottom_toBottomOf="@+id/paperButton"
+        app:layout_constraintEnd_toStartOf="@+id/paperButton"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paperButton"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/pierre" />
 
     <ImageButton
         android:id="@+id/scissorButton"
-        android:layout_width="136dp"
-        android:layout_height="131dp"
+        android:layout_width="112dp"
+        android:layout_height="113dp"
 
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/ciseaux"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/paperButton"
+        app:layout_constraintBottom_toBottomOf="@+id/paperButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/paperButton"
+        app:layout_constraintTop_toTopOf="@+id/paperButton"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ciseaux" />
 
     <ImageButton
         android:id="@+id/paperButton"
-        android:layout_width="136dp"
-        android:layout_height="131dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="112dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="76dp"
         android:background="@drawable/feuille"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,57 +61,115 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/feuille" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"/>
-    <TextView
-        android:layout_width="116dp"
-        android:layout_height="27dp"
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline"--><![CDATA[
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scissorButton" />
 
-        android:layout_marginEnd="212dp"
-        android:layout_marginRight="212dp"
-        android:layout_marginBottom="340dp"
-        android:text="@string/time"
-        android:textColor="#000"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/timeElapsed"
-        android:layout_width="135dp"
-        android:layout_height="67dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="320dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
+
+
+    ]]><!--        app:layout_constraintStart_toStartOf="@+id/guideline"-->
+        app:layout_constraintTop_toBottomOf="@+id/rockButton" />
+
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline"--><![CDATA[
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scissorButton" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
 
     <Button
         android:id="@+id/valider"
         android:layout_width="136dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="236dp"
-        android:layout_marginRight="236dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/valider"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Quitter"
         android:layout_width="136dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="196dp"
         android:text="@string/quitter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/valider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/valider"
+        app:layout_constraintTop_toTopOf="@+id/valider"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hostAnswer"
+        android:layout_width="92dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="88dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/valider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/clientAnswer"
+        android:layout_width="94dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/hostAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hostAnswer"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/hostName"
+        android:layout_width="131dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Serveur"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hostAnswer"
+        app:layout_constraintEnd_toStartOf="@+id/clientName"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/clientName"
+        android:layout_width="127dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Client"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/hostName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hostName"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline"-->
+        app:layout_constraintTop_toBottomOf="@+id/rockButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
